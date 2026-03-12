@@ -1,9 +1,3 @@
-    /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
-// package com.demo.fordemo;
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -18,7 +12,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author aldrinjohntamayo
+ * @author rosellafabillar
  */
 public class motorPH {
 
@@ -100,7 +94,7 @@ public class motorPH {
  
     public static double computeSSS(double monthlyGross) {
 
-                String file = "src/sss.csv";
+                String file = "MO-IT101-Group24.test/src/sss.csv";
                 double lastEmployeeShare = 0;
 
                 try (BufferedReader br = new BufferedReader(new FileReader(file))) {
@@ -149,7 +143,7 @@ public class motorPH {
 
     public static double computePagibig(double monthlyGross) {
 
-                String file = "src/pagibig.csv";
+                String file = "MO-IT101-Group24.test/src/pagibig.csv";
                 double contribution = 0;
 
                 try (BufferedReader br = new BufferedReader(new FileReader(file))) {
@@ -187,7 +181,7 @@ public class motorPH {
 
 public static double computePhilhealth(double monthlyGross) {
 
-    String file = "src/philhealth.csv";
+    String file = "MO-IT101-Group24.test/src/philhealth.csv";
 
     try (BufferedReader br = new BufferedReader(new FileReader(file))) {
 
@@ -237,7 +231,7 @@ public static double computePhilhealth(double monthlyGross) {
 
 public static double withholdingTax(double taxableIncome) {
 
-    String file = "src/withholding.csv";
+    String file = "MO-IT101-Group24.test/src/withholding.csv";
 
     try (BufferedReader br = new BufferedReader(new FileReader(file))) {
 
@@ -307,7 +301,7 @@ public static double withholdingTax(double taxableIncome) {
 
         boolean found = false;
 
-        String fileforemployee = "src/details.csv";
+        String fileforemployee = "MO-IT101-Group24.test/src/details.csv";
 
         try (BufferedReader br = new BufferedReader(new FileReader(fileforemployee))) {
 
@@ -408,8 +402,8 @@ public static double withholdingTax(double taxableIncome) {
 
     public static void oneEmployee () {
 
-        String empFile = "src/details.csv";
-        String attFile = "src/attendance.csv";
+        String empFile = "MO-IT101-Group24.test/src/details.csv";
+        String attFile = "MO-IT101-Group24.test/src/attendance.csv";
 
         Scanner sc = new Scanner(System.in);
 
@@ -564,8 +558,8 @@ public static double withholdingTax(double taxableIncome) {
 
     public static void allEmployee() {
 
-        String empFile = "src/details.csv";
-        String attFile = "src/attendance.csv";
+        String empFile = "MO-IT101-Group24.test/src/details.csv";
+        String attFile = "MO-IT101-Group24.test/src/attendance.csv";
         DateTimeFormatter timeFormat = DateTimeFormatter.ofPattern("H:mm");
 
         // Step 1: Load ALL employees into a list
@@ -690,3 +684,4 @@ public static double withholdingTax(double taxableIncome) {
 
 }
     
+
